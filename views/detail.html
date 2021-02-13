@@ -1,0 +1,9 @@
+{{ template "layout" .}}
+{{ define "main" }}
+
+{{ range . }}
+<p>{{ .Name }} - {{ .Price }} - {{ .CekStock }} {{/* if lt .Stock 3 */}}
+    <!-- (Stock Hampir Habis) --> {{/* end */}}
+</p>
+{{ end }}
+{{ end }}
